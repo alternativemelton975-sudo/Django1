@@ -1,0 +1,111 @@
+{% extends 'my_django_app/base.html' %}
+
+{% block title %}Home - My Django App{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container-lg">
+        <h1 class="display-3 fw-bold mb-3">Welcome to My Django App</h1>
+        <p class="lead mb-4">A modern web application built with Django, Bootstrap, and best-in-class technologies</p>
+        <div>
+            <a href="{% url 'my_django_app:about' %}" class="btn btn-primary btn-lg me-2">
+                <i class="fas fa-arrow-right"></i> Learn More
+            </a>
+            <a href="{% url 'my_django_app:services' %}" class="btn btn-outline-light btn-lg">
+                <i class="fas fa-cogs"></i> Our Services
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container-lg py-5">
+    <!-- Features Grid -->
+    <div class="row mb-5">
+        <div class="col-lg-4 mb-4">
+            <div class="card feature-card">
+                <div class="card-body text-center">
+                    <div class="feature-icon text-primary">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h5 class="card-title fw-bold">Getting Started</h5>
+                    <p class="card-text">Explore our application and discover the different sections using the navigation menu above.</p>
+                    <a href="{% url 'my_django_app:services' %}" class="btn btn-primary btn-sm">
+                        <i class="fas fa-star"></i> View Services
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card feature-card">
+                <div class="card-body text-center">
+                    <div class="feature-icon text-success">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h5 class="card-title fw-bold">Modern Features</h5>
+                    <p class="card-text">Responsive design, ASGI support, modular architecture, and admin interface included.</p>
+                    <a href="{% url 'my_django_app:about' %}" class="btn btn-primary btn-sm">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card feature-card">
+                <div class="card-body text-center">
+                    <div class="feature-icon text-info">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h5 class="card-title fw-bold">Quick Access</h5>
+                    <p class="card-text">Fast navigation to all main sections of the application with intuitive menu structure.</p>
+                    <a href="{% url 'my_django_app:contact' %}" class="btn btn-primary btn-sm">
+                        <i class="fas fa-envelope"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Highlights Section -->
+    <div class="row align-items-center bg-light rounded-3 p-5 mb-5">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="section-title mb-4">Why Choose Us?</h2>
+            <ul class="list-unstyled">
+                <li class="mb-3">
+                    <i class="fas fa-check-circle text-primary me-2"></i>
+                    <strong>Django 6.0</strong> - Modern Python web framework
+                </li>
+                <li class="mb-3">
+                    <i class="fas fa-check-circle text-primary me-2"></i>
+                    <strong>Bootstrap 5</strong> - Responsive design framework
+                </li>
+                <li class="mb-3">
+                    <i class="fas fa-check-circle text-primary me-2"></i>
+                    <strong>ASGI Support</strong> - Async capability with Uvicorn
+                </li>
+                <li class="mb-3">
+                    <i class="fas fa-check-circle text-primary me-2"></i>
+                    <strong>Mobile-First</strong> - Works seamlessly on all devices
+                </li>
+                <li class="mb-3">
+                    <i class="fas fa-check-circle text-primary me-2"></i>
+                    <strong>Scalable</strong> - Modular architecture for growth
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-6">
+            <img src="https://via.placeholder.com/400x300?text=Modern+Web+Development" alt="Modern Web Development" class="img-fluid rounded">
+        </div>
+    </div>
+
+    <!-- Call-to-Action -->
+    <div class="text-center bg-primary text-white rounded-3 p-5">
+        <h2 class="mb-3">Ready to Get Started?</h2>
+        <p class="lead mb-4">Explore all features and services we have to offer</p>
+        <a href="{% url 'my_django_app:contact' %}" class="btn btn-light btn-lg">
+            <i class="fas fa-phone"></i> Get In Touch
+        </a>
+    </div>
+</div>
+{% endblock %}

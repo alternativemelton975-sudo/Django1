@@ -1,0 +1,171 @@
+{% extends 'my_django_app/base.html' %}
+
+{% block title %}Services - My Django App{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container-lg">
+        <h1 class="display-3 fw-bold mb-3">Our Services</h1>
+        <p class="lead">Professional web development and Django solutions tailored to your needs</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container-lg py-5">
+    <!-- Services Grid -->
+    <div class="row mb-5">
+        <div class="col-lg-6 mb-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <div class="feature-icon text-primary mb-3">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h5 class="card-title fw-bold">Web Development</h5>
+                    <p class="card-text">Custom web applications built with Django, featuring modern architecture and best practices.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> Full-stack Django applications
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> REST API development
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> Database design and optimization
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> Performance tuning
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <div class="feature-icon text-warning mb-3">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h5 class="card-title fw-bold">ASGI & Performance</h5>
+                    <p class="card-text">High-performance applications using Django's ASGI support for better concurrency and speed.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> Async view functions
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> WebSocket integration
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> Real-time features
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> Scalable architecture
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <div class="feature-icon text-info mb-3">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h5 class="card-title fw-bold">Frontend Integration</h5>
+                    <p class="card-text">Beautiful, responsive user interfaces that work seamlessly with Django backends.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> Responsive design
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> Modern CSS frameworks
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> JavaScript integration
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> Mobile-first approach
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <div class="feature-icon text-success mb-3">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h5 class="card-title fw-bold">Maintenance & Support</h5>
+                    <p class="card-text">Ongoing support and maintenance for your Django applications to ensure peak performance.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> Security updates
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> Performance monitoring
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> Bug fixes and patches
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success"></i> 24/7 Support available
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Features Section -->
+    <div class="bg-light rounded-3 p-5 mb-5">
+        <h2 class="section-title mb-4">
+            <i class="fas fa-rocket"></i> Why Choose Our Services?
+        </h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3">
+                    <i class="fas fa-star text-warning"></i> Expert Team
+                </h5>
+                <p>Our team has years of experience building scalable web applications with Django and modern web technologies.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3">
+                    <i class="fas fa-lightning-bolt text-info"></i> Fast Delivery
+                </h5>
+                <p>We use agile methodologies to deliver your projects quickly without compromising quality and best practices.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3">
+                    <i class="fas fa-shield-alt text-danger"></i> Security First
+                </h5>
+                <p>Security is built into every step of our development process, following Django security best practices.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call-to-Action -->
+    <div class="text-center">
+        <h2 class="mb-4">Ready to Get Started?</h2>
+        <p class="lead mb-4">Contact us today to discuss your project requirements</p>
+        <a href="{% url 'my_django_app:contact' %}" class="btn btn-primary btn-lg">
+            <i class="fas fa-envelope"></i> Get In Touch
+        </a>
+    </div>
+</div>
+{% endblock %}
+            <li>Bug fixes and improvements</li>
+            <li>Feature enhancements</li>
+        </ul>
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <h3>📞 Ready to Get Started?</h3>
+        <p>Have a project in mind? We'd love to hear about it!</p>
+        <a href="{% url 'my_django_app:contact' %}" class="btn" style="font-size: 1.2rem; padding: 1rem 2rem;">Contact Us Today</a>
+    </div>
+</div>
+{% endblock %}

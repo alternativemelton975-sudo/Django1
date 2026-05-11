@@ -1,0 +1,220 @@
+{% extends 'my_django_app/base.html' %}
+
+{% block title %}Contact - My Django App{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container-lg">
+        <h1 class="display-3 fw-bold mb-3">Contact Us</h1>
+        <p class="lead">Get in touch with our team and let's discuss your next project</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container-lg py-5">
+    <!-- Contact Info Introduction -->
+    <div class="text-center mb-5">
+        <h2 class="mb-3">We're Here to Help</h2>
+        <p class="lead">Reach out to us through any of the channels below and we'll get back to you shortly.</p>
+    </div>
+
+    <!-- Contact Methods Grid -->
+    <div class="row mb-5">
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card contact-info-card feature-card h-100">
+                <div class="card-body text-center">
+                    <div class="feature-icon text-primary mb-3">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h5 class="card-title fw-bold">Email</h5>
+                    <p class="card-text text-muted">For inquiries and support</p>
+                    <p class="mb-0">
+                        <a href="mailto:info@mydjangoapp.com" class="text-decoration-none fw-bold">
+                            info@mydjangoapp.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card contact-info-card feature-card h-100">
+                <div class="card-body text-center">
+                    <div class="feature-icon text-success mb-3">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h5 class="card-title fw-bold">Phone</h5>
+                    <p class="card-text text-muted">Business inquiries</p>
+                    <p class="mb-0">
+                        <a href="tel:+15551234567" class="text-decoration-none fw-bold">
+                            +1 (555) 123-4567
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card contact-info-card feature-card h-100">
+                <div class="card-body text-center">
+                    <div class="feature-icon text-info mb-3">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h5 class="card-title fw-bold">Office</h5>
+                    <p class="card-text text-muted">Visit us</p>
+                    <p class="mb-0">
+                        <small>123 Django Street<br>Web City, WD 12345</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card contact-info-card feature-card h-100">
+                <div class="card-body text-center">
+                    <div class="feature-icon text-warning mb-3">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h5 class="card-title fw-bold">Hours</h5>
+                    <p class="card-text text-muted">Mon-Fri 9AM-6PM</p>
+                    <p class="mb-0">
+                        <small>GMT/UTC Time Zone</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Contact Information -->
+    <div class="row mb-5 pb-5 border-bottom">
+        <div class="col-lg-6 mb-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold mb-4">
+                        <i class="fas fa-briefcase text-primary"></i> Business Inquiries
+                    </h5>
+                    <p>For project discussions, partnerships, and business opportunities, please reach out to our team.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <strong>Email:</strong> <a href="mailto:business@mydjangoapp.com">business@mydjangoapp.com</a>
+                        </li>
+                        <li class="mb-2">
+                            <strong>Phone:</strong> <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold mb-4">
+                        <i class="fas fa-headset text-success"></i> Technical Support
+                    </h5>
+                    <p>For technical questions, bug reports, and development support, connect with our technical team.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <strong>Email:</strong> <a href="mailto:support@mydjangoapp.com">support@mydjangoapp.com</a>
+                        </li>
+                        <li class="mb-2">
+                            <strong>GitHub:</strong> <a href="https://github.com" target="_blank">View our projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="text-center mb-5">
+        <h3 class="mb-4">Follow Us On Social Media</h3>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="btn btn-outline-primary btn-lg rounded-circle" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="btn btn-outline-primary btn-lg rounded-circle" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="btn btn-outline-primary btn-lg rounded-circle" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="btn btn-outline-primary btn-lg rounded-circle" title="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="bg-light rounded-3 p-5">
+        <h3 class="mb-4 text-center">Send Us a Message</h3>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <form method="POST" class="needs-validation">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-bold">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label fw-bold">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label fw-bold">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+    </div>
+
+    <div class="card">
+        <h3>📝 Send us a Message</h3>
+        <form style="display: grid; gap: 1rem;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                    <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Name *</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div>
+                    <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Email *</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+            </div>
+            <div>
+                <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Subject *</label>
+                <input type="text" id="subject" name="subject" required style="width: 100%; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+            </div>
+            <div>
+                <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Message *</label>
+                <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; resize: vertical;"></textarea>
+            </div>
+            <button type="submit" class="btn" style="font-size: 1.1rem; padding: 0.75rem 1.5rem;">Send Message</button>
+        </form>
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <h3>🚀 Explore More</h3>
+        <p>While you're here, check out our other pages:</p>
+        <p>
+            <a href="{% url 'my_django_app:home' %}" class="btn">Home</a>
+            <a href="{% url 'my_django_app:about' %}" class="btn">About</a>
+            <a href="{% url 'my_django_app:services' %}" class="btn">Services</a>
+        </p>
+    </div>
+</div>
+{% endblock %}
