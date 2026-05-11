@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - My Portfolio</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <nav>
+            <span class="nav-brand">My Portfolio</span>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/admin">Admin</a>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="card">
+                <h1>Welcome Home!</h1>
+                <p>Welcome to my portfolio website. I'm excited to showcase my work and projects.</p>
+                <p>Check out my <a href="/about">About</a> page to learn more about me.</p>
+            </div>
+        </div>
+    </body>
+</html>
