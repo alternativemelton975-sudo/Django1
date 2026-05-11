@@ -2,9 +2,9 @@
 REM Django Development Server Runner Script
 REM This script activates the virtual environment and runs the Django development server
 
-cd /d "c:\Users\kcee1\Desktop\wills-stuff\djangoappportfolioreachout-main\myproject"
+cd /d "%~dp0myproject"
 
-call ".\..\\.venv\Scripts\activate.bat"
+call "%~dp0.venv\Scripts\activate.bat"
 
 echo.
 echo Starting Django development server...

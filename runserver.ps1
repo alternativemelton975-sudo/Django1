@@ -1,8 +1,9 @@
 # Django Development Server Runner Script
 # This script activates the virtual environment and runs the Django development server
 
-$projectPath = "c:\Users\kcee1\Desktop\wills-stuff\djangoappportfolioreachout-main\myproject"
-$venvPath = "c:\Users\kcee1\Desktop\wills-stuff\djangoappportfolioreachout-main\.venv"
+$root = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$projectPath = Join-Path $root "myproject"
+$venvPath = Join-Path $root ".venv"
 
 # Change to project directory
 Set-Location $projectPath
